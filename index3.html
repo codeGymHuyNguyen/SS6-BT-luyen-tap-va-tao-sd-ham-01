@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>b3</title>
+</head>
+<body>
+<script>
+    function compareAB(a,b) {
+        if (a > b) {
+            return (a + '>' + b);
+        }
+        if (a <= b){
+            return (a+b);
+        }
+    }
+    let a = parseInt(prompt('Input number 1:'));
+    let b = parseInt(prompt('Input number 2'));
+    let alertResult = compareAB(a,b);
+    alert(alertResult);
+</script>
+</body>
+</html>
