@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>b5</title>
+</head>
+<body>
+<script>
+    let Star = ['Polaris','Aldebaran','Deneb','Vega','Altair','Dubhe','Regulus'];
+    let Constellation = ['UrsaMinor','Tarurus','Cygnus','Lyra','Aquila','UrsaMajor','Leo'];
+
+    function checkStar(text) {
+        let result = '';
+        for (let i = 0; i < Star.length; i++) {
+            if (Star[i] === text) {
+                result = Star[i]+' is in '+Constellation[i];
+                break;
+            } else {
+                result = 'Not found!';
+            }
+        }
+        return result;
+    }
+    let nameStar = prompt('Input text');
+    let alertMessage = checkStar(nameStar);
+    alert(alertMessage);
+</script>
+</body>
+</html>
